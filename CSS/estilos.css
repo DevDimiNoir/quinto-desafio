@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(../Imagens/bg-intro-desktop.png);
+    width:100% ;
+    height:100vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;   
+}
+h1{
+    text-transform: uppercase;
+    color:hsl(0,100%,100%);
+    text-align:left;
+    width: 80%;
+    font-weight: 700;
+    font-size: 35px;
+}
+p{
+    color:hsl(0, 0%, 100%);
+    text-align:left;
+    width: 80%;
+    font-weight:500;
+}
+form{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+}
+form:before{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content:"EXPERIMENTE GRÁTIS POR 7 DIAS e depois US$ 20/mês. " ;
+    background-color: hsl(248, 32%, 49%);
+    width: 100%;
+    height: 10%;
+    color:hsl(0,100%,100%);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Poppins;
+    font-family: 600;
+}
+fieldset{
+    background-color: hsl(0,100%,100%);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 0;
+    gap: 10px;
+}
+input{
+    width: 90%;
+    height: 12%;
+    border-radius: 5px;
+    border-color:hsl(246, 25%, 77%) ;
+    border-style:double;
+}
+input:invalid{
+    border-color: hsl(0, 100%, 74%);
+    background-image: url(../Imagens/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+input:focus{
+    border-color: none;
+}
+input:valid{
+    border-color:hsl(154, 59%, 51%);
+}
+button{
+    width: 90%;
+    height: 12%;
+    border-radius: 10px;
+    background-color: hsl(154, 59%, 51%);
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+button:hover{ 
+    background-color: hsl(154, 67%, 67%);
+}
+a{
+    text-decoration: none;
+    color:  hsl(0, 100%, 74%);
+}
